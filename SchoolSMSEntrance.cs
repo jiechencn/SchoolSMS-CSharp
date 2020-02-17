@@ -30,7 +30,7 @@ namespace SchoolSMS
             string __dash = "---------------------------------------------------";
             Console.WriteLine(__dash);
             Console.WriteLine($"\tTimer runs at interval of {cfg.getInterval()} minutes.");
-            Console.WriteLine($"\tPress key x or X to exit.");
+            Console.WriteLine($"\tPress key x[X] to exit.");
             Console.WriteLine(__dash);
 
             smsSrv.OnRead += emailSrv.OnSMSArrival;
