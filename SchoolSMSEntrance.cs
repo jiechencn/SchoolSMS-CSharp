@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Drawing;
 using System.Reflection;
 using System.Timers;
+using Out = Colorful.Console;
 
 namespace SchoolSMS
 {
@@ -11,7 +13,6 @@ namespace SchoolSMS
         static ConfigResourcer cfg = ConfigResourcer.GetInstance();
         static void Main(string[] args)
         {
-            string test_git = "hello";
             cfg.GetRecipients();
             string version = "";
             object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyFileVersionAttribute), false);
@@ -24,11 +25,12 @@ namespace SchoolSMS
                 version = ((AssemblyFileVersionAttribute)attributes[0]).Version;
             }
 
-            Console.WriteLine($"SchoolSMS for the poor [C# {version}]");
-            string __dash = "---------------------------------------------";
+            Out.WriteAscii($"SchoolSMS", Color.Red);
+            Out.WriteLine($"\t\t[C# {version}]", Color.Pink);
+            string __dash = "---------------------------------------------------";
             Console.WriteLine(__dash);
-            Console.WriteLine($"Timer runs at interval of {cfg.getInterval()} minutes");
-            Console.WriteLine($"Press key x or X to exit");
+            Console.WriteLine($"\tTimer runs at interval of {cfg.getInterval()} minutes.");
+            Console.WriteLine($"\tPress key x[X] to exit.");
             Console.WriteLine(__dash);
 
             smsSrv.OnRead += emailSrv.OnSMSArrival;
