@@ -18,7 +18,6 @@ namespace SchoolSMS
         }
         private EmailSubscriber()
         {
-            string test_git = "hello22222";
         }
 
         internal void OnSMSArrival(ReadSMSEventArgs e)
