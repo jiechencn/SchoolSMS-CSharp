@@ -12,7 +12,6 @@ namespace SchoolSMS
         {
             GetInstance();
         }
-
         public static void GetInstance()
         {
             if (client == null)

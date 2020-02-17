@@ -4,7 +4,7 @@ using System.Timers;
 
 namespace SchoolSMS
 {
-    class Entrance
+   class Entrance
     {
         static SMSService smsSrv = new SMSService();
         static EmailSubscriber emailSrv = EmailSubscriber.GetInstance();

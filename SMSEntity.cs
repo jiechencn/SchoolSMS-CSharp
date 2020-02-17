@@ -17,6 +17,5 @@ namespace SchoolSMS
         public int SerialNumber;
         public int colstatus;
     }
-
-
+    
 }

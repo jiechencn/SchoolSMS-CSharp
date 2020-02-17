@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace SchoolSMS
 {
- 
+
     class ConfigResourcer
     {
         private static string cfgFile = "SchoolSMS.exe.config";

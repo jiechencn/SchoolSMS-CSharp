@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace SchoolSMS
 {
-    
     class SMSService
     {
         static ConfigResourcer cfg = ConfigResourcer.GetInstance();

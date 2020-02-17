@@ -16,7 +16,6 @@ namespace SchoolSMS
                 instance = new EmailSubscriber();
             return instance;
         }
-
         private EmailSubscriber()
         {
 

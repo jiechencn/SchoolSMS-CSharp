@@ -13,7 +13,6 @@ namespace SchoolSMS
                 loginfo.Info(info);
             }
         }
-
         public static void WriteLog(string info, Exception ex)
         {
             if (logerror.IsErrorEnabled)

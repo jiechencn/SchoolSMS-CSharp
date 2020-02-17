@@ -55,7 +55,6 @@ namespace SchoolSMS
 
             return true;
         }
-
         public void Close()
         {
             smtp.Disconnect(true);
