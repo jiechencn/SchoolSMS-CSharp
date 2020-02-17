@@ -11,6 +11,7 @@ namespace SchoolSMS
         static ConfigResourcer cfg = ConfigResourcer.GetInstance();
         static void Main(string[] args)
         {
+            string test_git = "hello";
             cfg.GetRecipients();
             string version = "";
             object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyFileVersionAttribute), false);
